@@ -39,11 +39,11 @@ class Config(object):
         if x.isdigit()
     )
 
-    DATABASE_NAME = "UploaderXNTBotDB"
+    DATABASE_NAME = "Cluster0"
 
     DATABASE_URL = os.environ.get(
         "DATABASE_URL",
-        "mongodb+srv://USERNAME:PASSWORD@cluster0.uzqvib6.mongodb.net/?appName=Cluster0"
+        ""
     )
 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1004456487791"))
