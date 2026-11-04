@@ -12,8 +12,8 @@ logging.basicConfig(
 class Config(object):
     
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID", ))
-    API_HASH = os.environ.get("API_HASH", "")
+    API_ID = int(os.environ.get("API_ID","24776633" ))
+    API_HASH = os.environ.get("API_HASH", "57b1f632044b4e718f5dce004a988d69")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     MAX_FILE_SIZE = 10 * 1024 * 1024 * 1024
@@ -38,13 +38,13 @@ class Config(object):
         if x.isdigit()
     )
 
-    DATABASE_URL = os.environ.get("")
+    DATABASE_URL = os.environ.get("mongodb+srv://rendamd1_db_user:M7vb8ZD9rx0AfHnP@cluster0.uzqvib6.mongodb.net/?appName=Cluster0")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1004456487791"))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "8248792819"))
     SESSION_NAME = "UploaderXNTBot"
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1004468070238")
 
     TG_MIN_FILE_SIZE = 2194304000
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
