@@ -14,7 +14,7 @@ class Config(object):
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     API_ID = int(os.environ.get("API_ID","24776633"))
-    API_HASH = os.environ.get("API_HASH", "YOUR_API_HASH")
+    API_HASH = os.environ.get("API_HASH", "57b1f632044b4e718f5dce004a988d69")
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     MAX_FILE_SIZE = 10 * 1024 * 1024 * 1024
@@ -43,7 +43,7 @@ class Config(object):
 
     DATABASE_URL = os.environ.get(
         "DATABASE_URL",
-        ""
+        "mongodb+srv://mongodbpy_db_user:pPgtRKyHsm8GvJF2@cluster0.u2ft5ps.mongodb.net/?appName=Cluster0"
     )
 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1004456487791"))
